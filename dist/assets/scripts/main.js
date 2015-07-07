@@ -102,7 +102,6 @@ var app = {
             'p7-btn2.png',
             'p6-btn.png',
             'p6-btn2.png',
-            'p6-people.jpg',
             'p7-ko.png',
             'p6-text.png',
             'p6-02.jpg'
@@ -121,7 +120,7 @@ var app = {
                 if( loading_val< 68 ){
                     loading_val +=1;
                 }
-                if( loading_val >67 ){
+                if( loading_val >66 ){
                     var timenumber = 0
                     /* loading animation */
                     var settime = setInterval(function(){

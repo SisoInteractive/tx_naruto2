@@ -199,17 +199,11 @@ input {
 }
 .scene06.swiper-slide-active .p6-01 {
   opacity: 1;
-  -webkit-animation: out 3s 1;
-  -webkit-animation-fill-mode: forwards;
-}
-.scene06.swiper-slide-active .fenx_people {
-  -webkit-animation: bounceIn8 .8s 1;
-  -webkit-animation-delay: 1.9s;
   -webkit-animation-fill-mode: forwards;
 }
 .scene06.swiper-slide-active .fenx_text {
-  -webkit-animation: bounceIn 1.5s 1;
-  -webkit-animation-delay: 1.9s;
+  -webkit-animation: bounceIn8 1.5s 1;
+  -webkit-animation-delay: 1.4s;
   -webkit-animation-fill-mode: forwards;
 }
 .scene04.swiper-slide-active .people—img {
@@ -401,7 +395,7 @@ input {
 .scene07.swiper-slide-active .index-body {
   background: url("../images/p7-01.jpg") no-repeat;
   background-size: 100%;
-  -webkit-animation: p7_bg .3s 9!important;
+  -webkit-animation: p7_bg .5s 8!important;
   -webkit-animation-fill-mode: forwards!important;
   -webkit-animation-delay: 1s!important;
 }
