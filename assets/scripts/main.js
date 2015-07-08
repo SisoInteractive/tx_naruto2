@@ -302,7 +302,7 @@ var app = {
             setTimeout(function(){
                 var audioEle3 = document.getElementById("audio3");
                 audioEle3.play();
-            },850)
+            },250)
 
             console.log(Count_sum)
         })
