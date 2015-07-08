@@ -172,14 +172,8 @@ var app = {
         var app_index = 1;//now Swiper inedx
         app.mySwiper = new Swiper('.swiper-container', {
             direction : 'vertical',
-            effect : 'fade',
-            mousewheelControl:"false",
-
-            // init
-            onInit: function () {
-                //$('.scene').eq(0).addClass('active');
-
-            }
+            speed:'100',
+            mousewheelControl:"false"
         });
 
         function lockSwiper(){
@@ -277,6 +271,7 @@ var app = {
             $('.star').show();
             $('.p1-B-alert').removeClass('active');
             $('.p4-1-xin').show()
+            Count_sum = 1
         })
 
         //提示信息弹出 click
@@ -307,7 +302,6 @@ var app = {
                 audioEle3.play();
             },850)
 
-            Count_sum++;
             console.log(Count_sum)
         })
 
