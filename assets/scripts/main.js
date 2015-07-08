@@ -200,7 +200,7 @@ var app = {
         });
 
         //count Sum
-        var Count_sum = 0; //统计打错结果
+        var Count_sum = 1; //统计打错结果
         //replay btn
         $('.reply').hammer().bind("tap", function(){
             //console.log( app_index );
@@ -288,10 +288,11 @@ var app = {
 
             error_sum = -1;
             $('.tishi').html( Count_sum )
-            if(Count_sum == 0){
-                $('#title').html('!作为一个资深火影迷,我竟然全部答对了')
+            console.log( Count_sum )
+            if(Count_sum == 1){
+                $('#title').html('作为资深火影迷，我竟被岸本扇了个巴掌')
             }else{
-                $('#title').html('太羞耻了!作为一个资深火影迷,我竟然被岸本老师亲手打了'+ Count_sum + '巴掌')
+                $('#title').html('羞辱！作为资深火影迷，我竟被岸本扇了个'+ Count_sum + '巴掌')
             }
 
         })
