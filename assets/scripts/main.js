@@ -301,13 +301,9 @@ var app = {
             app.mySwiper.slideNext();
             //$('.fenx_people').hide()
             lockSwiper()
-            var aodioTime = setInterval(function(){
-                var audioEle2 = document.getElementById("audio2");
-                audioEle2.play();
-                setTimeout(function(){
-                    clearInterval(aodioTime);
-                },4000)
-
+            setTimeout(function(){
+                var audioEle3 = document.getElementById("audio3");
+                audioEle3.play();
             },850)
 
             Count_sum++;

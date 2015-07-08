@@ -395,7 +395,7 @@ input {
 .scene07.swiper-slide-active .index-body {
   background: url("../images/p7-01.jpg") no-repeat;
   background-size: 100%;
-  -webkit-animation: p7_bg .5s 8!important;
+  -webkit-animation: p7_bg .3s 8!important;
   -webkit-animation-fill-mode: forwards!important;
   -webkit-animation-delay: 1s!important;
 }
