@@ -35,8 +35,10 @@ var app = {
         loadimg: function () {
         var audioEle1 = document.getElementById("audio");
         var audioEle2 = document.getElementById("audio2");
+        var audioEle3 = document.getElementById("audio3");
         audioEle1.oncanplaythrough = function() {};
         audioEle2.oncanplaythrough = function() {};
+        audioEle3.oncanplaythrough = function() {};
         var imgSrcArr = [
             'error.png',
             'zan.png',
