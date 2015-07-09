@@ -156,8 +156,8 @@ input {
   opacity: 0;
 }
 .swiper-slide .fenx_btn:active img {
-  width: 80%!important;
-  right: 11.1%!important;
+  width: 90%!important;
+  right: 6.1%!important;
 }
 .swiper-slide .A_bg {
   opacity: 0;
@@ -168,6 +168,40 @@ input {
 .swiper-slide .p4-1-xin {
   -webkit-animation: bounceIn5 1s infinite;
   opacity: 1!important;
+}
+.swiper-slide .fx_btn1 {
+  position: absolute;
+  width: 77.1%;
+  right: 12.3%;
+  top: 57.9%;
+}
+.swiper-slide .zban-btn {
+  position: absolute;
+  width: 77.1%;
+  right: 12.3%;
+  top: 63.1%;
+  display: block;
+}
+.swiper-slide .zban-btn img {
+  width: 100%;
+}
+.swiper-slide #r_paly {
+  width: 77.1%;
+  right: 12.3%;
+  top: 77%;
+  position: absolute;
+}
+.swiper-slide #r_paly img {
+  width: 100%;
+}
+.swiper-slide .fx_btn2 {
+  width: 77.1%;
+  right: 12.3%;
+  top: 70.4%;
+  position: absolute;
+}
+.swiper-slide .fx_btn2 img {
+  width: 100%;
 }
 .tishi {
   display: block;
