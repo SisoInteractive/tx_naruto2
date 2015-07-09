@@ -175,7 +175,8 @@ var app = {
         app.mySwiper = new Swiper('.swiper-container', {
             direction : 'vertical',
             speed:'100',
-            mousewheelControl:"false"
+            mousewheelControl:"false",
+            preventLinksPropagation : false
         });
 
         function lockSwiper(){
