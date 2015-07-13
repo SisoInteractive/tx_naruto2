@@ -196,6 +196,18 @@ var app = {
             error_sum = -1;
         });
 
+        $('.fx_btn1').hammer().bind("tap", function(){
+            app.mySwiper.unlockSwipes();
+            app.mySwiper.slideTo(7, 1, false);
+            lockSwiper();
+        });
+
+        $('.zban-btn').hammer().bind("tap", function(){
+            app.mySwiper.unlockSwipes();
+            app.mySwiper.slideTo(7, 1, false);
+            lockSwiper();
+        });
+
         //count Sum
         var Count_sum = 1; //统计打错结果
         //replay btn

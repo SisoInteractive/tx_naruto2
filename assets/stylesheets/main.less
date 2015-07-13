@@ -400,7 +400,26 @@ input {
   -webkit-animation-fill-mode: forwards!important;
 }
 
+.p8-btn{
+  width: 93.2%;
+  position:absolute;
+  left: 3.2%;
+  display: block;
+  top: 84%;
+  z-index: 999;
+  height:11.5%;
+}
+.p8-btn:active{
+  width: 90%;
+  left: 5%;
+}
+.p8-text{
+  left: 61.3%;
+  top: 5%;
+}
+.p8-bg{
 
+}
 .loading_box{
   position: absolute;
   z-index: 9999;
@@ -431,6 +450,7 @@ input {
     right: 43%;
     font-size: 20px;
   }
+
 }
 
 .scene07{
@@ -455,7 +475,13 @@ input {
   }
 
 }
-
+.scene08.swiper-slide-active{
+  .p8-bg{
+    -webkit-animation: bounceIn6 2s infinite!important;
+    -webkit-animation-delay: .3s !important;
+    -webkit-animation-fill-mode: forwards !important;
+  }
+}
 .scene07.swiper-slide-active{
   .index-body{
     background:url("../images/p7-01.jpg") no-repeat;
@@ -495,6 +521,43 @@ input {
   100% {
     background:url("../images/p7-05.jpg") no-repeat;
     background-size: 100%;
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
