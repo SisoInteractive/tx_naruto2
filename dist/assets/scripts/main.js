@@ -26,7 +26,6 @@ var app = {
                     if( loadedLength == 7 ){
                         app.loadimg() // 加载动画结束，进行后续加载
                     }
-
                 };
             }
 
@@ -116,7 +115,6 @@ var app = {
         for (var i = 0; i < imgLength; i++) {
             var img = new Image();
             img.src = imgPath + imgSrcArr[i];
-
             img.onload = function () {
                 loadedLength++;
                 if( loading_val< 68 ){
@@ -141,29 +139,25 @@ var app = {
                             }
                         }
                         else{
-                            timenumber += 1;
+                            timenumber += 2;
                         }
                         if( timenumber > 10 && timenumber <30 ){ $('.loading-body').attr("src",'assets/images/loading-1.jpg') }
                         if( timenumber > 30 && timenumber <50 ){ $('.loading-body').attr("src",'assets/images/loading-2.jpg') }
                         if( timenumber > 50 && timenumber <70 ){ $('.loading-body').attr("src",'assets/images/loading-3.jpg') }
                         if( timenumber > 70 && timenumber <90 ){ $('.loading-body').attr("src",'assets/images/loading-4.jpg') }
                         if( timenumber > 90 && timenumber <100 ){ $('.loading-body').attr("src",'assets/images/loading-5.jpg') }
-
                         if( timenumber > 100 ){
                             clearInterval(settime);
                         }
 
-                    },20)
+                    },10)
                 }
-
-
-
 
             };
         }
 
         function checkIsAllLoaded () {
-            return loadedLength / imgLength == 1;
+            return loadedLength / imgLength > 0.6;
         }
     },
 
@@ -185,7 +179,6 @@ var app = {
 
         //lock Swiper
         lockSwiper();
-
 
         var error_sum = -1; //初始化用户选择 -1为未选中
         //click bin
@@ -304,7 +297,6 @@ var app = {
             }else{
                 $('#title').html('羞辱！作为资深火影迷，我竟被岸本扇了个'+ Count_sum + '巴掌')
             }
-
         })
 
         $('.fx_btn2').hammer().bind("tap", function(){
@@ -328,9 +320,6 @@ var app = {
             document.removeEventListener('touchstart', initSound, false);
         };
         document.addEventListener('touchstart', initSound, false);
-
-
-
     }
 }
 $(function (){
