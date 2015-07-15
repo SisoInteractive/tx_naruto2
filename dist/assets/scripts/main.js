@@ -121,6 +121,7 @@ var app = {
                     loading_val +=1;
                 }
                 if( loading_val >1 ){
+                    console.log('开始loading...'+loadedLength+'图片' )
                     var timenumber = 0
                     /* loading animation */
                     var settime = setInterval(function(){
