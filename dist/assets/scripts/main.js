@@ -120,7 +120,7 @@ var app = {
                 if( loading_val< 68 ){
                     loading_val +=1;
                 }
-                if( loading_val >66 ){
+                if( loading_val >1 ){
                     var timenumber = 0
                     /* loading animation */
                     var settime = setInterval(function(){
@@ -150,7 +150,7 @@ var app = {
                             clearInterval(settime);
                         }
 
-                    },10)
+                    },7)
                 }
 
             };
