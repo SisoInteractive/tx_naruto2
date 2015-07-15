@@ -31,6 +31,7 @@ var app = {
                             $('.loading-text').html(_this.timenumber+'%');
                             if( _this.timenumber == 100 ){
                                 /* check img load progress */
+
                                 clearInterval(settime);//结束加载器
                                 app.loadimg(_this) // 加载动画结束，进行后续加载
                                 console.log('前面加载完毕')
