@@ -157,7 +157,7 @@ var app = {
         }
 
         function checkIsAllLoaded () {
-            return loadedLength / imgLength > 0.6;
+            return loadedLength / imgLength > 0.4;
         }
     },
 

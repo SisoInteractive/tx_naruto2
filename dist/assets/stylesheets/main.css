@@ -148,7 +148,7 @@ input {
   display: none;
 }
 .swiper-slide .fenx_text {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   z-index: 99;
 }
@@ -228,16 +228,8 @@ input {
 .scene03.swiper-slide-active .B_img {
   -webkit-animation: bounceInLeft .7s 1!important;
 }
-.scene06.swiper-slide-active .fenx_text {
-  -webkit-animation: bounceIn 1.3s 1;
-}
 .scene06.swiper-slide-active .p6-01 {
   opacity: 1;
-  -webkit-animation-fill-mode: forwards;
-}
-.scene06.swiper-slide-active .fenx_text {
-  -webkit-animation: bounceIn8 1.5s 1;
-  -webkit-animation-delay: 1.4s;
   -webkit-animation-fill-mode: forwards;
 }
 .scene04.swiper-slide-active .people—img {
