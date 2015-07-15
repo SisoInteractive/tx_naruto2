@@ -15,6 +15,8 @@ body {
   height: 100%;
   overflow: hidden;
   background: #efeddd;
+  max-width: 440px;
+  margin: 0  auto;
 }
 a {
   text-decoration: none;
