@@ -61,8 +61,8 @@ var app = {
         audioEle2.oncanplaythrough = function() {};
         audioEle3.oncanplaythrough = function() {};
         var imgSrcArr = [
-            'error.png', 'zan.png', 'btn-2.png', 'btn-bg.png', 'btn-bg2.png', 'btn.png',
-            'hengfu.png', 'index.jpg', 'lm01-2.png', 'lm01.png', 'lm02-1.png', 'logo.png', 'm-img.png', 'mz01.png',
+            'error.png', 'index.jpg','zan.png', 'btn-2.png', 'btn-bg.png', 'btn-bg2.png', 'btn.png',
+            'hengfu.png', 'lm01-2.png', 'lm01.png', 'lm02-1.png', 'logo.png', 'm-img.png', 'mz01.png',
             'mz02.png', 'p1-1.png', 'p1-A.png', 'p1-alert-text.jpg', 'p2-true-text.jpg', 'p1-B-alert.png', 'p1-B.png',
             'p1-bg.jpg', 'p1-title.png', 'p2-1.png', 'p2-A.png', 'p2-alert-text.jpg', 'p2-B.png',
             'p2-bg.jpg', 'p2-title.png', 'p3-true-text.jpg', 'p3-1.png', 'p3-bg.jpg',
@@ -105,7 +105,7 @@ var app = {
         }
 
         function checkIsAllLoaded () {
-            return loadedLength / imgLength > 0.2;
+            return loadedLength / imgLength > 0.3;
         }
     },
 
