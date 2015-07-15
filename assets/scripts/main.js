@@ -123,7 +123,7 @@ var app = {
                 if( loading_val< 68 ){
                     loading_val +=1;
                 }
-                if( loading_val >1 ){
+                if( loading_val >0 ){
                     console.log('开始loading...'+loadedLength+'图片' )
                     var timenumber = 0
                     /* loading animation */
@@ -161,7 +161,7 @@ var app = {
         }
 
         function checkIsAllLoaded () {
-            return loadedLength / imgLength > 0.4;
+            return loadedLength / imgLength > 0.2;
         }
     },
 
