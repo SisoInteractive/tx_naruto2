@@ -136,20 +136,20 @@ var app = {
 
         var error_sum = -1; //初始化用户选择 -1为未选中
         //click bin
-        $('.btn').hammer().bind("touchend", function(){
+        $('.btn').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideNext();
             lockSwiper()
             error_sum = -1;
         });
 
-        $('.fx_btn1').hammer().bind("touchend", function(){
+        $('.fx_btn1').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideTo(7, 1, false);
             lockSwiper();
         });
 
-        $('.zban-btn').hammer().bind("touchend", function(){
+        $('.zban-btn').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideTo(7, 1, false);
             lockSwiper();
@@ -158,7 +158,7 @@ var app = {
         //count Sum
         var Count_sum = 1; //统计打错结果
         //replay btn
-        $('.reply').hammer().bind("touchend", function(){
+        $('.reply').on("touchend", function(){
             //console.log( app_index );
             //console.log($('.swiper-slide').eq(app_index).html())
 
@@ -185,7 +185,7 @@ var app = {
         })
 
         //click btn_define
-        $('.btn_define').hammer().bind("touchend", function(){
+        $('.btn_define').on("touchend", function(){
             var that = $(this).parent();
             if(error_sum!=-1){
 
@@ -208,7 +208,7 @@ var app = {
 
         })
         //click mp3 box
-        $('.mp3-box').hammer().bind("touchend", function(){
+        $('.mp3-box').on("touchend", function(){
             $(this).toggleClass('active');
             $(this).attr('src','assets/images/m-img-active.png')
             if(!audio.paused){
@@ -221,7 +221,7 @@ var app = {
         })
 
         //r_paly
-        $('#r_paly').hammer().bind("touchend", function(){
+        $('#r_paly').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideTo(0, 100, false);
             lockSwiper();
@@ -237,7 +237,7 @@ var app = {
         })
 
         //提示信息弹出 click
-        $('.alert_box').hammer().bind("touchend", function(){
+        $('.alert_box').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideNext();
             lockSwiper()
@@ -253,7 +253,7 @@ var app = {
             }
         })
 
-        $('.fx_btn2').hammer().bind("touchend", function(){
+        $('.fx_btn2').on("touchend", function(){
             app.mySwiper.unlockSwipes();
             app.mySwiper.slideNext();
             //$('.fenx_people').hide()
