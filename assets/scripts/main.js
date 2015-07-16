@@ -44,7 +44,6 @@ var app = {
                             if( _this.timenumber > 50 && _this.timenumber <70 ){ $('.loading-body').attr("src",'assets/images/loading-3.jpg') }
                             if( _this.timenumber > 70 && _this.timenumber <90 ){ $('.loading-body').attr("src",'assets/images/loading-4.jpg') }
                             if( _this.timenumber > 90 && _this.timenumber <100 ){ $('.loading-body').attr("src",'assets/images/loading-5.jpg') }
-
                         },7)
 
 
@@ -93,6 +92,12 @@ var app = {
                     /* loading animation */
                     if ( checkIsAllLoaded() && isLoaded == false && _this.timenumber > 99) {
                         isLoaded = true;
+                        $("img").each(function(){
+                            var dataSrc = $(this).attr('data-src');
+                           if(dataSrc){
+                               $(this).prop('src',dataSrc);
+                           }
+                        });
                         setTimeout(function(){
                             $('.loading_box').hide();
                             $('.swiper-container').fadeIn();
